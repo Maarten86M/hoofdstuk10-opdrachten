@@ -2,6 +2,7 @@
 
 :root {
     --main-bg-color: hsl(184, 80%, 91%);
+    --main-icon-color: #D84282;
 }
 
 body {
@@ -85,4 +86,36 @@ ul li a::after {
 #gestreepte-link:hover::after {
     /* alle andere properties worden behouden, we overschrijven alleen de width property */
     width: 100%;
+}
+
+
+/*OPDRACHT 10.5*/
+
+#menu {
+    position: relative;
+    width: 150px;
+    height: 100px;
+    background-color: var(--main-icon-color);
+}
+
+#menu:after{
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 20px;
+    width: 150px;
+    height: 20px;
+    background-color: var(--main-bg-color);
+}
+
+#menu:before{
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 60px;
+    width: 150px;
+    height: 20px;
+    background-color: var(--main-bg-color);
 }
