@@ -1,3 +1,13 @@
+/*voorbeeld 10.3 ROOT*/
+
+:root {
+    --main-bg-color: hsl(184, 80%, 91%);
+}
+
+body {
+    background-color: var(--main-bg-color);
+}
+
 /*voorbeeld 10.1 Driekhoek*/
 #driehoek {
     width: 0;
@@ -36,7 +46,6 @@ ul li a::after {
     position: relative;
     border-radius: 10px;
 }
-
 
 #talkbubble::before {
     content: "";
