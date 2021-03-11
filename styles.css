@@ -59,3 +59,30 @@ ul li a::after {
     border-right: 20px solid #D84282;
     border-bottom: 13px solid transparent;
 }
+
+/*voorbeeld oefening 10.4 transitie*/
+
+#gestreepte-link,
+#gestreepte-link:link,
+#gestreepte-link:visited {
+    font-family: helvetica, sans-serif;
+    font-size: 30px;
+    color: #D84282;
+    text-decoration: none;
+}
+
+/* BEGIN STAAT */
+#gestreepte-link::after {
+    display: block;
+    content: "";
+    width: 0%;
+    height: 3px;
+    background-color: #D84282;
+    transition: width .35s ease-in-out;
+}
+
+/* EIND STAAT */
+#gestreepte-link:hover::after {
+    /* alle andere properties worden behouden, we overschrijven alleen de width property */
+    width: 100%;
+}
