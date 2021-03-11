@@ -1,3 +1,4 @@
+/*voorbeeld 10.1 Driekhoek*/
 #driehoek {
     width: 0;
     height: 0;
@@ -6,6 +7,7 @@
     border-bottom: 50px solid black;
 }
 
+/*opdracht 10.1 Driekhoek*/
 #driehoek-2 {
     width: 0;
     height: 0;
@@ -14,6 +16,8 @@
     border-left: 50px solid black;
 }
 
+/*voorbeeld 10.2 List items*/
+
 ul li a {
     color: #D84282;
 }
@@ -21,4 +25,28 @@ ul li a {
 ul li a::after {
     display: inline-block;
     content: "→";
+}
+
+/*voorbeeld 10.2 Wolkje*/
+#talkbubble {
+    margin-left: 20px;
+    width: 120px;
+    height: 80px;
+    background-color: #D84282;
+    position: relative;
+    border-radius: 10px;
+}
+
+
+#talkbubble::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: -20px;
+    top: 26px;
+    width: 0;
+    height: 0;
+    border-top: 13px solid transparent;
+    border-right: 20px solid #D84282;
+    border-bottom: 13px solid transparent;
 }
