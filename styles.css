@@ -1,7 +1,15 @@
-#vierkant {
+#driehoek {
     width: 0;
     height: 0;
     border-left: 200px solid transparent;
     border-right: 200px solid transparent;
     border-bottom: 200px solid black;
+}
+
+#driehoek-2 {
+    width: 0;
+    height: 0;
+    border-top: 200px solid transparent;
+    border-bottom: 200px solid transparent;
+    border-left: 200px solid black;
 }
